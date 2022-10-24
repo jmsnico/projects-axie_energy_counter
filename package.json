@@ -1,0 +1,14 @@
+{
+  "name": "axie_energy-counter",
+  "version": "1.0.0",
+  "description": "Axie Energy Counter App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nico Tenebro",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

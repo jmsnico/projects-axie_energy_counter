@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="container" class="container">
+      <div class="row">
+        <div class="col">
+          <div id="card-wrapper" class="card text-center">
+            <div class="card-header">
+              <h1 class="title">Axie Energy Counter</h1>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Round <span id="round-num">1</span></h2>
+              <p class="card-text text-muted">
+                buttons bellow is to keep track of enemies energy
+              </p>
+              <div>
+                <h3 id="total-energy" class="card-text num">3</h3>
+                <h4 class="card-text fw-light text-muted">Total Energy</h4>
+              </div>
+              <hr />
+              <div class="mb-3 pb-3">
+                <p class="fw-light fs-5">Energy Used</p>
+                <button
+                  id="energy-used-add"
+                  class="btn btn-primary rounded-pill px-3"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <span id="used-energy" class="mx-5 fw-light fs-2 num">0</span>
+                <button
+                  id="energy-used-sub"
+                  class="btn btn-danger rounded-pill px-3"
+                >
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+              </div>
+              <hr />
+              <div class="mb-3 pb-3">
+                <p class="fw-light fs-5">Energy Gained</p>
+                <button
+                  id="energy-gain-add"
+                  class="btn btn-primary rounded-pill px-3"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <span id="gained-energy" class="mx-5 fw-light fs-2 num">0</span>
+                <button
+                  id="energy-gain-sub"
+                  class="btn btn-danger rounded-pill px-3"
+                >
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+              </div>
+              <hr />
+              <div class="mb-3">
+                <p class="fw-light fs-5">Energy Destroyed</p>
+                <button
+                  id="energy-destroy-add"
+                  class="btn btn-primary rounded-pill px-3"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <span id="destroyed-energy" class="mx-5 fw-light fs-2 num"
+                  >0</span
+                >
+                <button
+                  id="energy-destroy-sub"
+                  class="btn btn-danger rounded-pill px-3"
+                >
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-footer d-flex">
+              <button id="end-turn" class="btn btn-warning m-2 flex-grow-1">
+                End Turn
+              </button>
+              <button id="reset" class="btn btn-danger m-2 flex-grow-1">
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
